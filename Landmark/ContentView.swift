@@ -10,16 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack (alignment: .leading) {
-            MapView().edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            MapView().ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
             CircleImage().offset(y: -130).padding(.bottom, -130)
             Text("圆明园").font(.title)
             HStack {
-                Text("皇家园林").font(.subheadline)
+                Text("皇家园林")
                 Spacer()
-                Text("北京").font(.subheadline)
+                Text("北京")
             }
+            .font(.subheadline)
+            .foregroundColor(.secondary)
         }.padding()
         
         Spacer()
