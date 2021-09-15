@@ -63,13 +63,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		25D7096126EAF57E00AF4208 /* Model */ = {
+		25D7096126EAF57E00AF4208 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				25D7095926EAED1E00AF4208 /* Landmark.swift */,
 				25D7095B26EAF2AA00AF4208 /* ModelData.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		25D7096226EAF58D00AF4208 /* Resources */ = {
@@ -124,7 +124,7 @@
 				25EC610226EA55BC00471DAB /* Assets.xcassets */,
 				25EC610726EA55BC00471DAB /* Info.plist */,
 				25EC60FE26EA55B700471DAB /* LandmarkApp.swift */,
-				25D7096126EAF57E00AF4208 /* Model */,
+				25D7096126EAF57E00AF4208 /* Models */,
 				25EC610426EA55BC00471DAB /* Preview Content */,
 				25D7096226EAF58D00AF4208 /* Resources */,
 				25D7096026EAF54A00AF4208 /* Views */,
