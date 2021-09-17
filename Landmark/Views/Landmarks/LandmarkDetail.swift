@@ -15,6 +15,15 @@ struct LandmarkDetail: View {
         modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
     
+    var hike: Hike {
+        let value: [Hike] = modelData.hikes.filter({ $0.id == landmark.id })
+        if value.count > 0 {
+            return value[0]
+        }
+        // fake data
+        return modelData.hikes[0]
+    }
+    
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
@@ -42,7 +51,11 @@ struct LandmarkDetail: View {
                 .foregroundColor(.secondary)
                 
                 Divider()
-            
+                Text("Hike here")
+                    .font(.title2)
+                HikeView(hike: hike)
+
+                Divider()
                 Text("About \(landmark.name)")
                     .font(.title2)
                 Text(landmark.description)
